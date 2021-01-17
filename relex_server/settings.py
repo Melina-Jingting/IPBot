@@ -92,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'relexdb',
         'USER': 'postgres',
-        'PASSWORD': '', # INSERT YOUR DB PASSWORD HERE
+        'PASSWORD': 'cs2102', # INSERT YOUR DB PASSWORD HERE
         'HOST': 'localhost',
         'PORT': '5432',
     }
