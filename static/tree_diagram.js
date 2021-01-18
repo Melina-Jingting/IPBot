@@ -24,9 +24,19 @@ var svg = d3.select("#contact-md").append("svg")
 var div = d3.select("#contact-md").append("div")
   .attr("class", "tooltip")
   .style("opacity", 0);
-  
+
+var careerMaps = new Array(treeOne, treeTwo);
+
 // root = treeOne[0];
-root = treeTwo[0]; // implement if-else toggle between two career maps here
+var y = Math.random();
+if (y < 0.5)
+  y = 0
+else
+  y= 1
+
+root = careerMaps[y][0];
+
+var previous_y = y;
 
 root.x0 = height / 2;
 root.y0 = 0;
