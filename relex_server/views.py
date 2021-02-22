@@ -17,3 +17,7 @@ def dashboard(request):
         request.session['profile']=profile
     context["tree_json"] = create_career_map_json(request.session.get('profile'))
     return render(request,'dashboard.html',context)
+
+
+def linkedin(request):
+    return render(request,'registration/linkedin.html')

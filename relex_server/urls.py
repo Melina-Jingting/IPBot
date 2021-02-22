@@ -28,7 +28,8 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'), # for dashboard page
     path('upload/', views.upload_resume, name='upload'), # for uploading resume page
     # path('uploadresume/upload.php', TemplateView.as_view(template_name='upload.html'), name='upload'), # for uploading resume page
-    path('resumes/', include('resumes.urls')),
+    # path('resumes/', include('resumes.urls')),
+    path('linkedin/', views.linkedin, name= 'linkedin'), # for uploading resume page
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
