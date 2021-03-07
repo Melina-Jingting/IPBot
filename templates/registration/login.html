@@ -31,8 +31,13 @@
     {{ form.as_p }}
     
     <button type="submit">Log In</button>
-    <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>
-    <p><a href="{% url 'linkedin' %}">Sign In with Linkedin</a></p>
+    <p><a href="{% url 'password_reset' %}">Forgot password?</a></p>
+    
+    <p>
+    <a href='https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78ioflr7umfzey&redirect_uri=https%3A%2F%2F5a81px81e7.execute-api.us-east-2.amazonaws.com%2Fdefault%2Flinkedinsocial'>
+    <img src='/static/linkedin.png' width="170" height="30">
+    </a>
+    </p>
 
   </form>
   </div>
